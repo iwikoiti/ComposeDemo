@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeDemoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) {  }
+//                Scaffold(modifier = Modifier.fillMaxSize()) {  }
             }
         }
     }
@@ -34,5 +34,13 @@ Text(
     fontSize=fontSize.sp,
     fontWeight = FontWeight.Bold
  )
+}
+
+@Preview
+@Composable
+fun DemoTextPreview(){
+    ComposeDemoTheme {
+        DemoText(message = "Welcome to Android", fontSize = 12f)
+    }
 }
 
